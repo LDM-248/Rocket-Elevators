@@ -27,6 +27,18 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<!-- RADIO BUTTONS -->
+		<script type="text/javascript">	
+			$(document).ready(function(){
+				$(".check-on").click(function(){
+					$("#on").prop("checked", true);
+				});
+				$(".check-off").click(function(){
+					$("#off").prop("checked", true);
+				});
+			});	
+		</script>		
 	</head>
 
 	<!--
@@ -206,41 +218,24 @@
 
 			</div>
 
+			<!-- RADIO BUTTONS-->
+			<FORM NAME=form1>
+	
+				<br>
+				<center><a>Please choose the type of building you have:</a></center>
+				<br>
+				<center><INPUT TYPE="radio" NAME="residential" VALUE="residential">Residential<BR></center>
+				<br>	
+				<center><INPUT TYPE="radio" NAME="commercial"  VALUE="commercial">Commercial<BR></center>
+				<br>	
+				<center><INPUT TYPE="radio"	NAME="corporate"   VALUE="corporate">Corporate<BR></center>
+				<br>	
+				<center><INPUT TYPE="radio"	NAME="hybrid"      VALUE="hybrid">Hybrid<BR> </center>
+			</FORM>
 
-
-			<!-- Overview -->
-			<section id="overview">
-				<div class="container text-center">
-
-					<div class="row text-left">
-
-						<div class="col-sm-8">
-							<img src="demo_files/images/elevatorresi.png" alt="product image" />
-						</div>
-
-						<div class="col-sm-4">
-							<h3 class="fw-300">Residential <span>Projects</span></h3>
-						
-							<p>57% of our elevators here at Rocket Elevators are made residential. No matter the challenge, space or budget, we will make sure you have the elevator <strong> You </strong> want right in the comfort of your home. </p>
-							
-							<hr />
-
-							<ul class="list-unstyled list-icons">
-								<li><i class="fa fa-check"></i> Safety</li>
-								<li><i class="fa fa-check"></i> Speed</li>
-								<li><i class="fa fa-check"></i> Style</li>
-								<li><i class="fa fa-check"></i> Right price for the elevator you want</li>
-								<li><i class="fa fa-check"></i> Reassuring team here for your needsgi</li>
-							</ul>
-
-						</div>
-					</div>
-
-				</div>
-			</section>
-			 
-
-
+			
+			
+			
 			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
