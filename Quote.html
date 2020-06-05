@@ -218,22 +218,20 @@
 
 			</div>
 
-			<!-- RADIO BUTTONS-->
-			<FORM NAME=form1>
-	
-				<br>
-				<center><a>Please choose the type of building you have:</a></center>
-				<br>
-				<center><INPUT TYPE="radio" NAME="residential" VALUE="residential">Residential<BR></center>
-				<br>	
-				<center><INPUT TYPE="radio" NAME="commercial"  VALUE="commercial">Commercial<BR></center>
-				<br>	
-				<center><INPUT TYPE="radio"	NAME="corporate"   VALUE="corporate">Corporate<BR></center>
-				<br>	
-				<center><INPUT TYPE="radio"	NAME="hybrid"      VALUE="hybrid">Hybrid<BR> </center>
-			</FORM>
+			<form name="choiceofbuilding">
+                <center><p style="font-size: 45px; font-style: bold;"><strong>Fill In Your Submission Request</strong></center></p>
+                    <center><p style="font-size: 25px;">Please select the informations about your project</p>
+                    <br>Type of building<br></center>
+                    <center><select class="form-select" onchange="inputs(this.value);" name="building-type-select" id="buildingselect">
+                        <option name="neutral" >Please choose a category</option>
+                        <option name="residential" value="residential">Residential</option>
+                        <option name="commercial" value="commercial">Commercial</option>
+                        <option name="corporate" value="corporate">Corporate</option>
+                        <option name="hybrid" value="hybrid">Hybrid</option>
+                </select></center>
+            </form>
 
-			
+
 			
 			
 			<!-- FOOTER -->
