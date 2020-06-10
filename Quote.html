@@ -29,15 +29,17 @@
     <link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
         
     <!-- JQUERY -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	
+<!-- Apply style to the page --> 
 	<style>
+	
         #form {
             font-size: 22px;
             font-family: sans-serif;
             text-align: center;
         }
-
+	
         #residential,
         #commercial,
         #corporate,
@@ -193,6 +195,7 @@
             for (i in document.getElementsByName("quality")) {
                 if (document.getElementsByName("quality")[i].checked) values.push(document.getElementsByName("quality")[i].value);
             }
+
             var value = values[0];
             if (value === "standard") {
                 var result = 7565;
@@ -416,7 +419,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/_smarty/logo_dark.png" alt="" />
+							<img src="assets/images/_smarty/logo_dark.png" alt="logo of the company Rocket Elevators. Half of it is red, and the other half is blue. The slogan underneath it says 'Elevate safety, speed and style'" />
 						</a>
 
 						<!-- 
@@ -500,10 +503,10 @@
 					<option name="hybrid" value="hybrid">Hybrid</option>
 				</select><br><br>
 				
-				<img class="center" id="residential" src="demo_files/images/ascenseur-commercial.jpg" alt="product image" width="400">
-				<img class="center" id="commercial" src="demo_files/images/ascenseur-commercial.jpg" alt="product image" width="400">
-				<img class="center" id="corporate" src="demo_files/images/ascenseur-commercial.jpg" alt="product image" width="400">
-				<img class="center" id="hybrid" src="demo_files/images/ascenseur-commercial.jpg" alt="product image" width="400">
+				<img class="center" id="residential" src="demo_files/images/residential1.jpg" alt="Person pressing a button inside an elevator." width="400">
+				<img class="center" id="commercial" src="demo_files/images/thematics/construction/w9-min.jpg" alt="Multiple elevators with cylinder-ish shapes in a building." width="400">
+				<img class="center" id="corporate" src="demo_files/images/corporate1.jpg" alt="Three office workers waiting for an elevator to arrive." width="400">
+				<img class="center" id="hybrid" src="demo_files/images/hybrid1.jpg" alt="Round elevator inside a building made with clear glass." width="400"> 
 
 			<!-- if "Residential" is chosen in the propositions, execute this code -->
 				<div id="residentialDiv">
@@ -541,7 +544,7 @@
 					Number of separate rental companies: <input placeholder="0" id="number" onchange="setshaftsRecommended(), setPrices()" type="number"
 						name="seperateRentalCompaniesNbrCOR" min="0" oninput="this.value = Math.abs(this.value)"><br>
 					Maximum amount of occupants per floor: <input placeholder="0" id="number" onchange="setshaftsRecommended(), setPrices()" type="number"
-						name="occupantsPerFloorNbrCOR" min="0" oninput="this.value = Math.abs(this.value)"><br>
+						name="occupantsPerFloorNbrCOR" min="0" oninput="this.value = Math.abs(this.value)"><br> 
 				</div>
 
 			<!--  if "Hybrid" is chosen in the propositions, execute this code -->	
